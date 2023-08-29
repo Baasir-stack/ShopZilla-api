@@ -18,7 +18,7 @@ connectDB();
 
 app.use(
     cors({
-      origin: "http://127.0.0.1:3000", // Allow only this origin
+      origin: "https://shopzilla-app.onrender.com", // Allow only this origin
       methods: "GET,POST,PUT,DELETE",
       credentials: true,
     })
