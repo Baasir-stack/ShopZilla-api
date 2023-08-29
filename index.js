@@ -15,10 +15,9 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, "../vite-project/public")));
 connectDB();
 
-
 app.use(
     cors({
-      origin: "https://shopzilla-app.onrender.com", // Allow only this origin
+      origin: ["http://127.0.0.1:3000","https://shopzilla-app.onrender.com"], // Allow only this origin
       methods: "GET,POST,PUT,DELETE",
       credentials: true,
     })
